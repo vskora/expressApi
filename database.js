@@ -9,6 +9,8 @@ var database = mysql.createConnection({
   database : 'api_database'
 });
 
+console.log(database);
+
 database.connect(function(e) {
   if (e) throw e;
 });
