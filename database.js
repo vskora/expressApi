@@ -7,7 +7,9 @@ var database = mysql.createConnection({
   user     : 'admin',
   password : process.env.pwd,
   database : 'api_database',
-  ssl      : process.env.ssl
+  ssl      : {
+    cert: process.env.ssl
+  }
 });
 
 console.log(database);
