@@ -6,7 +6,7 @@ var database = mysql.createConnection({
   port     : '3306',
   user     : 'admin',
   password : process.env.pwd,
-  database : 'api'
+  database : 'api_database'
 });
 
 database.connect(function(e) {
