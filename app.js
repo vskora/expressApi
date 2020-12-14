@@ -43,6 +43,4 @@ app.use('/api/users', users);
 app.use('/api/groups', groups);
 app.use('/api/keys', keys);
 
-const PORT = process.env.PORT || 8000; app.listen(PORT, () => { console.log(`App listening on port ${PORT}!`); });
-
 module.exports = app;
